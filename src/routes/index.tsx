@@ -8,7 +8,7 @@ import Login from "../pages/users/Login";
 import Register from "../pages/users/Register";
 import Activate from "../pages/users/Activate";
 
-import Users from "../pages/Users";
+// import Users from "../pages/admin/Users";
 import Navbar from "../components/layout/Navbar";
 import ProductDescription from "../pages/products/Details";
 import ProtectedRoute from "./ProtectedRoute";
@@ -48,7 +48,7 @@ const Index = () => {
               element={<ResetPassword />}
             />
 
-            <Route path="/listallusers" element={<Users />} />
+            {/* <Route path="/listallusers" element={<Users />} /> */}
             <Route
               path="/productdescription/:id"
               element={<ProductDescription />}
