@@ -5,7 +5,8 @@ const Product = (props: any) => {
   const { product } = props;
   const navigate = useNavigate();
 
-  const baseUrl = "http://localhost:4000";
+  const baseURL = process.env.REACT_APP_API;
+
 
   return (
     <div>
@@ -17,7 +18,7 @@ const Product = (props: any) => {
       >
         <img
           className=""
-          src={`${baseUrl}/${product.image}`}
+          src={`${baseURL}/${product.image}`}
           alt={product.name}
         />
 

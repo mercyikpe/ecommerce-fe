@@ -30,6 +30,9 @@ const Cart = () => {
       );
     return totalPrice;
   };
+
+  const baseURL = process.env.REACT_APP_API;
+
   return (
     <>
       <Helmet>
@@ -104,7 +107,7 @@ const Cart = () => {
                               <td className="whitespace-nowrap px-6 py-4 font-medium">
                                 <img
                                   className="w-[100px]"
-                                  src={`http://localhost:4000/${cartItem.image}`}
+                                  src={`${baseURL}/${cartItem.image}`}
                                   alt="bedroom"
                                 />
                               </td>

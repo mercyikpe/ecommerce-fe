@@ -17,6 +17,9 @@ const ProductDescription = () => {
   const handleCart = () => {
     dispatch(setCart(state));
   };
+
+  const baseURL = process.env.REACT_APP_API;
+
   return (
     <div>
       <Helmet>
@@ -50,7 +53,7 @@ const ProductDescription = () => {
         <div className="container mx-auto px-4">
           <img
             className="w-full"
-            src={`http://localhost:4000/${state.image}`}
+            src={`${baseURL}/${state.image}`}
             alt={state.name}
           />
         </div>
