@@ -72,9 +72,9 @@ const ProductDescription = () => {
           <p className="font-bold">
             Brand: <span className="font-normal">{state.brand}</span>
           </p>
-          <p className="font-bold">
+          {/* <p className="font-bold">
             Category: <span className="font-normal">{state.category}</span>
-          </p>
+          </p> */}
 
           <p className="mt-4 text-4xl font-bold text-violet-900">
             {state.price.toLocaleString("en-US", {
